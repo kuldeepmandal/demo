@@ -1,92 +1,194 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfolio</title>
-    <link rel="stylesheet" href="styles.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Kuldeep Mandal</title>
+  <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-      <header class="header">
-    <div class="header-inner">
-      <h1 class="logo">Kuldeep Mandal</h1>
-      <nav class="nav">
-        <a href="#about">About</a>
-        <a href="#projects">Projects</a>
-        <a href="#contact">Contact</a>
-      </nav>
-    </div>
+  <button class="theme-toggle" id="themeToggle">🌙</button>
+
+  <button class="back-to-top" id="backToTop">↑</button>
+
+  <header class="header">
+  <div class="header-inner">
+    <h1 class="logo">Kuldeep Mandal</h1>
+    <nav class="nav">
+    <a href="#about">About</a>
+    <a href="#skills">Skills</a>
+    <a href="#projects">Projects</a>
+    <a href="#media">Media</a>
+    <a href="#gallery">Gallery</a>
+    <a href="#contact">Contact</a>
+    </nav>
+  </div>
   </header>
 
-     <main>
-    <section class="hero">
-      <div>
-        <h2>Hello — I'm <span class="accent">Kuldeep Mandal</span></h2>
-        <p>Hi, I’m Kuldeep Mandal — a tech enthusiast who enjoys creating simple, clean, and user-friendly web designs. <hr></p>
+  <main>
+  <section class="hero">
+    <div>
+    <h2>Hello – I'm <span class="accent">Kuldeep Mandal</span></h2>
+    <p>My name is Kuldeep Mandal. I am a dedicated computing student who enjoys building clean and easy-to-use web interfaces.</p><hr>
+    </div>
+    <img src="images/image.png" alt="Kuldeep Mandal photo">
+  </section>
+
+  <section id="about" class="about">
+    <h3>About</h3>
+    <p>I'm learning and building projects in HTML, CSS, and JavaScript to improve my skills and turn ideas into real digital experiences. I love exploring new technologies and growing a little every day.</p>
+  </section>
+
+  <section id="skills" class="skills">
+    <h3>Skills</h3>
+    <div class="skills-container">
+    <div class="skill-item">
+      <div class="skill-info">
+      <span>HTML</span>
+      <span>90%</span>
       </div>
-      <img src="images/image.png" alt="photo">
-    </section>
+      <div class="skill-bar">
+      <div class="skill-progress" data-progress="90"></div>
+      </div>
+    </div>
 
-    <section id="about" class="about">
-      <h3>About</h3>
-      <p>I’m learning and building projects in HTML, CSS, and JavaScript to improve my skills and turn ideas into real digital experiences.
-I love exploring new technologies and growing a little every day.</p>
-    </section>
+    <div class="skill-item">
+      <div class="skill-info">
+      <span>CSS</span>
+      <span>85%</span>
+      </div>
+      <div class="skill-bar">
+      <div class="skill-progress" data-progress="85"></div>
+      </div>
+    </div>
 
-    <section id="projects" class="projects">
-  <h3>Projects</h3>
-  <div class="project-grid">
+    <div class="skill-item">
+      <div class="skill-info">
+      <span>JavaScript</span>
+      <span>75%</span>
+      </div>
+      <div class="skill-bar">
+      <div class="skill-progress" data-progress="75"></div>
+      </div>
+    </div>
 
-    <div class="project-box">
+    <div class="skill-item">
+      <div class="skill-info">
+      <span>Git & GitHub</span>
+      <span>80%</span>
+      </div>
+      <div class="skill-bar">
+      <div class="skill-progress" data-progress="80"></div>
+      </div>
+    </div>
+    </div>
+  </section>
+
+  <section id="projects" class="projects">
+    <h3>Projects</h3>
+    <div class="project-grid">
+    <div class="project-box" data-url="https://github.com/kuldeepmandal/portfolio">
       <h4>Personal Portfolio Website</h4>
       <p>A responsive website built using HTML, CSS, and JavaScript to showcase my work, skills, and contact details.</p>
     </div>
 
-    <div class="project-box">
+    <div class="project-box" data-url="https://github.com/kuldeepmandal">
       <h4>To-Do List App</h4>
       <p>A simple task-management app where users can add, edit, and delete tasks. Built with JavaScript for interactivity.</p>
     </div>
 
-    <div class="project-box">
+    <div class="project-box" data-url="https://github.com/kuldeepmandal">
       <h4>Weather App</h4>
       <p>A clean UI that shows real-time weather data using a free weather API. Built with HTML, CSS, and JavaScript.</p>
     </div>
 
-    <div class="project-box">
+    <div class="project-box" data-url="https://bloodconnect.unaux.com/">
       <h4>BloodConnect</h4>
       <p>A platform prototype designed to connect blood donors with people in need quickly and easily. Built with a clean UI and smooth user flow.</p>
     </div>
+    </div>
+  </section>
 
-  </div>
-</section>
+  <section id="media" class="media-section">
+    <h3>Media Gallery</h3>
+    
+    <div class="media-grid">
+    <div class="media-item">
+      <h4>Video</h4>
+      <video controls width="100%">
+      <source src="https://www.w3schools.com/html/mov_bbb.mp4" type="video/mp4">
+      Your browser does not support the video tag.
+      </video>
+    </div>
 
+    <div class="media-item">
+      <h4>Audio</h4>
+      <audio controls>
+      <source src="https://www.w3schools.com/html/horse.mp3" type="audio/mpeg">
+      Your browser does not support the audio element.
+      </audio>
+    </div>
 
-    <section id="contact" class="contact">
-      <h3>Contact</h3>
-<form class="contact-form" action="thankyou.html">
-  <label>
-    <span>Name</span>
-    <input type="text" name="name" required>
-  </label>
+    <div class="media-item">
+      <h4>Canvas Drawing</h4>
+      <canvas id="myCanvas" width="300" height="200"></canvas>
+    </div>
+    </div>
+  </section>
 
-  <label>
-    <span>Email</span>
-    <input type="email" name="email" required>
-  </label>
+  <section id="gallery" class="slider-section">
+    <h3>Image Gallery</h3>
+    <div class="slider-container">
+    <button class="slider-btn prev" id="prevBtn">❮</button>
+    <div class="slider-images">
+      <img src="https://picsum.photos/600/400?random=1" alt="image 1" class="slider-img active">
+      <img src="https://picsum.photos/600/400?random=2" alt="image 2" class="slider-img">
+      <img src="https://picsum.photos/600/400?random=3" alt="image 3" class="slider-img">
+      <img src="https://picsum.photos/600/400?random=4" alt="mage 4" class="slider-img">
+    </div>
+    <button class="slider-btn next" id="nextBtn">❯</button>
+    </div>
+    <div class="slider-dots" id="sliderDots"></div>
+  </section>
 
-  <label>
-    <span>Message</span>
-    <textarea name="message" rows="5" required></textarea>
-  </label>
+  <section class="layout-note">
+    <h3>Flexbox vs Grid</h3>
+    <div class="note-content">
+    <p><strong>Flexbox</strong> is designed for one-dimensional layouts (either row or column). It's best for aligning items along a single axis and is perfect for navigation bars, card layouts, and centering content.</p>
+    <p><strong>Grid</strong> is designed for two-dimensional layouts (rows and columns simultaneously). It's ideal for complex page layouts, photo galleries, and when you need precise control over both dimensions.</p>
+    <p><em>This portfolio uses Grid for the project cards layout to create a responsive multi-column design that adapts automatically.</em></p>
+    </div>
+  </section>
 
-  <button type="submit">Send</button>
-</form>
-    </section>
+  <section id="contact" class="contact">
+    <h3>Contact</h3>
+    <div id="formMessage" class="form-message"></div>
+    <form class="contact-form" id="contactForm" action="thankyou.html">
+    <label>
+      <span>Name</span>
+      <input type="text" name="name" id="name" required>
+    </label>
+
+    <label>
+      <span>Email</span>
+      <input type="email" name="email" id="email" required>
+    </label>
+
+    <label>
+      <span>Message</span>
+      <textarea name="message" id="message" rows="5" required></textarea>
+    </label>
+
+    <button type="submit">Send</button>
+    </form>
+  </section>
   </main>
 
-    <footer class="footer">
-        <a href="https://www.instagram.com/kuldeepmandal_/">Insta</a>
-        <a href="http://https://github.com/kuldeepmandal/">GitHub</a>
-    </footer>
+  <footer class="footer">
+  <a href="https://www.instagram.com/kuldeepmandal_/">Instagram</a>
+  <a href="https://github.com/kuldeepmandal/">GitHub</a>
+  </footer>
+
+  <script src="script.js"></script>
 </body>
 </html>
